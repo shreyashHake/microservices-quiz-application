@@ -8,4 +8,5 @@ public interface IQuizService {
     Quiz create(Quiz quiz);
     List<Quiz> getAll();
     Quiz getById(Long quizId);
+    Quiz getByResultId(Long resultId);
 }

@@ -35,4 +35,11 @@ public class QuizServiceImpl implements IQuizService {
         quiz.setQuestions(questionClient.getAllQuestionByQuizId(quizId));
         return quiz;
     }
+
+    @Override
+    public Quiz getByResultId(Long resultId) {
+        Quiz quiz = quizRepository.findByResultId(resultId);
+        quiz.setQuestions(questionClient.getAllQuestionByQuizId(quiz.getQuizId()));
+        return quiz;
+    }
 }

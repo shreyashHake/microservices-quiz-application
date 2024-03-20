@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.micro-service</groupId>
-    <artifactId>QuizService</artifactId>
+    <artifactId>ResultService</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>QuizService</name>
-    <description>The service for questions</description>
+    <name>ResultService</name>
+    <description>Result service</description>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.5</spring-cloud.version>
@@ -102,5 +102,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

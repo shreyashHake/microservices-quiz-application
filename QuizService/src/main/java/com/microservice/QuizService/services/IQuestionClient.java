@@ -12,6 +12,7 @@ import java.util.List;
 
 // using Application name in Eureka server - QUESTION-SERVICE
 @FeignClient(name = "QUESTION-SERVICE")
+// this 'name' is same as spring.application.name in the application.properties of Question-Service
 public interface IQuestionClient {
     @GetMapping("/question/quiz/{quizId}")
     List<Question> getAllQuestionByQuizId(@PathVariable Long quizId);
